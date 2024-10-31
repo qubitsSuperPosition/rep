@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Bryan's Café</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="logo"
+          ><img src="/assets/images/logo.webp" alt=""
+        /></a>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          &#9776;
+        </button>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="contact">
+        <h2>Contact Us</h2>
+        <form id="enquiry-form">
+          <label for="first-name">First Name:</label>
+          <input type="text" id="first-name" name="first-name" required />
+
+          <label for="last-name">Last Name:</label>
+          <input type="text" id="last-name" name="last-name" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject" required />
+
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required></textarea>
+
+          <button type="submit">Submit</button>
+        </form>
+        <p id="form-response" style="display: none">
+          Your message has been sent!
+        </p>
+      </section>
+
+      <section class="branches">
+        <h2>Our Branches</h2>
+        <div id="branch-info">
+          <!-- Branch information will be loaded here dynamically from XML -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="pol_res">
+        <p id="footer-text">© <span id="current-year"></span></p>
+        <p><span id="private-policy"></span></p>
+      </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
